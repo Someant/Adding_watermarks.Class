@@ -51,7 +51,11 @@ class addwatermark
 		
 		
 		// Output and free memory
-		//header('Content-type: image/'.explode('.',$path)[1]);
+		/*
+		If you're generating an image dynamically based on post data and don't want to save it to the server, sending it to be displayed can cause problems as when the person tries to save it, the browser will request it again from the server (causing any post data to be lost and probably a corrupted png).
+		The easiest way to get around this is to force it to download using the content disposition header, for example: 
+		*/
+		header('Content-type: image/'.explode('.',$path)[1]);
 		imagepng($im,$path);
 		imagedestroy($im);
 		//var_dump($im);
