@@ -16,7 +16,7 @@ $water->Adding_watermarks($stamp,$im,$newpath)
 
 ###For Ueditor:
 * Ueditor --version:1.4.3 With PHP
-* BUG:当上传单张图片时，上传效率会变慢，另外当图片上传完成时编辑器不能够自适应高度，传PNG含alpha通道时将可能导致损坏图像。
+* BUG:当上传单张图片时，上传效率会变慢，另外当图片上传完成时编辑器不能够自适应高度，传PNG含alpha通道时将可能导致图像损坏。
 
 ```bash
 /php/config.json
