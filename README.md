@@ -36,5 +36,6 @@ $water->Adding_watermarks($CONFIG['imageWaterMarks'],'http://'.$_SERVER['SERVER_
 ###Known BUG:
 Use replace file method to adding watermark.
 Pictures path cannot be created in the root directory of the Web,so you need to add '../' the specified path.
+Causing any post data to be lost and probably a corrupted png when you uploading png.
 
 忘了说，我是一个英语渣+PHP菜鸟。
