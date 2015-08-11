@@ -20,13 +20,13 @@ $water->Adding_watermarks($stamp,$im,$newpath)
 ```bash
 /php/config.json
 
-#9:
-include "addwatermark.class.php";
 #12:
 add  "imageWaterMarks": "url", /* 图片水印路径 (绝对路径或者URL) 如：http://yourdomain.com/images/logo.png 水印必须为PNG格式 */
 
 /php/action_upload.php
 
+#9:
+include "addwatermark.class.php";
 #52 #53:
 add:
 $water=new addwatermark;
