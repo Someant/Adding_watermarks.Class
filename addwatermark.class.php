@@ -51,7 +51,7 @@ class addwatermark
 		
 		
 		// Output and free memory
-		header('Content-type: image/'.explode('.',$path)[1]);
+		//header('Content-type: image/'.explode('.',$path)[1]);
 		imagepng($im,$path);
 		imagedestroy($im);
 		//var_dump($im);
