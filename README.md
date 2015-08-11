@@ -16,6 +16,7 @@ $water->Adding_watermarks($stamp,$im,$newpath)
 
 ###For Ueditor:
 * Ueditor --version:1.4.3 With PHP
+* BUG:当上传单张图片时，上传效率不知为何会变慢，另外当图片上传完成时编辑器不能够自适应高度。
 
 ```bash
 /php/config.json
@@ -34,8 +35,8 @@ $water->Adding_watermarks($CONFIG['imageWaterMarks'],'http://'.$_SERVER['SERVER_
 ```
 
 ###Known BUG:
-Use replace file method to adding watermark.
-Pictures path cannot be created in the root directory of the Web,so you need to add '../' the specified path.
-Causing any post data to be lost and probably a corrupted png when you uploading png.
+* Use replace file method to adding watermark.
+* Pictures path cannot be created in the root directory of the Web,so you need to add '../' the specified path.
+* Causing any post data to be lost and probably a corrupted png when you uploading png.
 
 忘了说，我是一个英语渣+PHP菜鸟。
