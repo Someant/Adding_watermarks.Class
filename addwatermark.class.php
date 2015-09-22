@@ -56,7 +56,14 @@ class addwatermark
 		The easiest way to get around this is to force it to download using the content disposition header, for example: 
 		*/
 		header('Content-type: image/'.explode('.',$path)[1]);
-		imagepng($im,$path);
+		if(@end(explode('.',$path))=='png')
+		{
+			imagepng($im,$path);
+		}
+		else
+		{
+			imagejpeg($im,$path);
+		}
 		imagedestroy($im);
 		//var_dump($im);
 		return $path;	
